@@ -1,0 +1,27 @@
+name: Validate manifest schema
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Install JSON Schema CLI
+      uses: sourcemeta/jsonschema@v11.0.0
+
+    - name: Validate CAD manifest
+      run: |
+        schema_url=$(jq -r '.["$schema"]' .hornet/cad_manifest.json)
+        curl -o cad_schema.json "$schema_url"
+        jsonschema validate cad_schema.json .hornet/cad_manifest.json --json
+
+    - name: Validate Sim manifest
+      run: |
+        schema_url=$(jq -r '.["$schema"]' .hornet/sim_manifest.json)
+        curl -o sim_schema.json "$schema_url"
+        jsonschema validate sim_schema.json .hornet/sim_manifest.json --json

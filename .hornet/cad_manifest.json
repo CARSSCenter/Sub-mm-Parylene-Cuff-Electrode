@@ -1,0 +1,82 @@
+{
+    "$schema": "https://raw.githubusercontent.com/ITISFoundation/hornet-manifest-spec/refs/heads/main/schema/cad_manifest.schema.json",
+    "repository": "https://github.com/sjl2s/Sub-mm-Parylene-Cuff-Electrode",
+    "components": [
+      {
+        "id": "FullLarge Assembly",
+        "type": "assembly",
+        "description": "Complete full large cuff electrode assembly",
+        "files": [
+          { "path": "STEP Files/FullLarge_Assem.STEP", "type": "step_export" },
+          { "path": "SLDPRT Files/FullLarge_Assem.SLDASM", "type": "solidworks_assembly" }
+        ],
+        "components": [
+          {
+            "id": "FullLarge Electrode1",
+            "type": "part",
+            "description": "First electrode contact of full large cuff",
+            "files": [
+              { "path": "STEP Files/FullLarge_Electrode1.STEP", "type": "step_export" },
+              { "path": "SLDPRT Files/FullLarge_Electrode1.SLDPRT", "type": "solidworks_part" }
+            ]
+          },
+          {
+            "id": "FullLarge Electrode2",
+            "type": "part",
+            "description": "Second electrode contact of full large cuff",
+            "files": [
+              { "path": "STEP Files/FullLarge_Electrode2.STEP", "type": "step_export" },
+              { "path": "SLDPRT Files/FullLarge_Electrode2.SLDPRT", "type": "solidworks_part" }
+            ]
+          },
+          {
+            "id": "FullLarge Parylene",
+            "type": "part",
+            "description": "Parylene C insulation body of full large cuff",
+            "files": [
+              { "path": "STEP Files/FullLarge_Parylene.STEP", "type": "step_export" },
+              { "path": "SLDPRT Files/FullLarge_Parylene.SLDPRT", "type": "solidworks_part" }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "HelicalLarge Assembly",
+        "type": "assembly",
+        "description": "Complete helical large cuff electrode assembly",
+        "files": [
+          { "path": "STEP Files/HelicalLargeAssem.STEP", "type": "step_export" },
+          { "path": "SLDPRT Files/HelicalLargeAssem.SLDASM", "type": "solidworks_assembly" }
+        ],
+        "components": [
+          {
+            "id": "HelicalLarge Electrode1",
+            "type": "part",
+            "description": "First electrode contact of helical large cuff",
+            "files": [
+              { "path": "STEP Files/HelicalLarge_Electrode1.STEP", "type": "step_export" },
+              { "path": "SLDPRT Files/HelicalLarge_Electrode1.SLDPRT", "type": "solidworks_part" }
+            ]
+          },
+          {
+            "id": "HelicalLarge Electrode2",
+            "type": "part",
+            "description": "Second electrode contact of helical large cuff",
+            "files": [
+              { "path": "STEP Files/HelicalLarge_Electrode2.STEP", "type": "step_export" },
+              { "path": "SLDPRT Files/HelicalLarge_Electrode2.SLDPRT", "type": "solidworks_part" }
+            ]
+          },
+          {
+            "id": "HelicalLarge Parylene",
+            "type": "part",
+            "description": "Parylene C insulation body of helical large cuff",
+            "files": [
+              { "path": "STEP Files/HelicalLarge_Parylene.STEP", "type": "step_export" },
+              { "path": "SLDPRT Files/HelicalLarge_Parylene.SLDPRT", "type": "solidworks_part" }
+            ]
+          }
+        ]
+      }
+    ]
+  }

@@ -1,0 +1,72 @@
+
+{
+    "$schema": "https://raw.githubusercontent.com/ITISFoundation/hornet-manifest-spec/refs/heads/main/schema/sim_manifest.schema.json",
+    "mappings": [
+      {
+        "component_ref": {
+          "cad_manifest_path": "./cad_manifest.json",
+          "component_id": "FullLarge Electrode1"
+        },
+        "material": {
+          "name": "Platinum"
+        },
+        "boundary_conditions": ["electrical_contact"],
+        "tags": ["biocompatible"]
+      },
+      {
+        "component_ref": {
+          "cad_manifest_path": "./cad_manifest.json",
+          "component_id": "FullLarge Electrode2"
+        },
+        "material": {
+          "name": "Platinum"
+        },
+        "boundary_conditions": ["electrical_contact"],
+        "tags": ["biocompatible"]
+      },
+      {
+        "component_ref": {
+          "cad_manifest_path": "./cad_manifest.json",
+          "component_id": "FullLarge Parylene"
+        },
+        "material": {
+          "name": "Parylene C"
+        },
+        "boundary_conditions": ["electrical_insulation"],
+        "tags": ["biocompatible"]
+      },
+      {
+        "component_ref": {
+          "cad_manifest_path": "./cad_manifest.json",
+          "component_id": "HelicalLarge Electrode1"
+        },
+        "material": {
+          "name": "Platinum"
+        },
+        "boundary_conditions": ["electrical_contact"],
+        "tags": ["biocompatible"]
+      },
+      {
+        "component_ref": {
+          "cad_manifest_path": "./cad_manifest.json",
+          "component_id": "HelicalLarge Electrode2"
+        },
+        "material": {
+          "name": "Platinum"
+        },
+        "boundary_conditions": ["electrical_contact"],
+        "tags": ["biocompatible"]
+      },
+      {
+        "component_ref": {
+          "cad_manifest_path": "./cad_manifest.json",
+          "component_id": "HelicalLarge Parylene"
+        },
+        "material": {
+          "name": "Parylene C"
+        },
+        "boundary_conditions": ["electrical_insulation"],
+        "tags": ["biocompatible"]
+      }
+    ]
+  }
