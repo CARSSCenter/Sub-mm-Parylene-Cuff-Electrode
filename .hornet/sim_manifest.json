@@ -32,7 +32,7 @@
         "material": {
           "name": "Parylene C"
         },
-        "boundary_conditions": ["electrical_insulation"],
+        "boundary_conditions": ["insulating"],
         "tags": ["biocompatible"]
       },
       {
@@ -65,8 +65,9 @@
         "material": {
           "name": "Parylene C"
         },
-        "boundary_conditions": ["electrical_insulation"],
+        "boundary_conditions": ["insulating"],
         "tags": ["biocompatible"]
       }
     ]
+
   }
